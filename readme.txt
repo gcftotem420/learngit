@@ -8,3 +8,5 @@ hahaha.
 My brother is a stupid boy.
 she she yipe henge de changsha.
 zhe shi yong command bianji de.
+This is my second chance.
+
