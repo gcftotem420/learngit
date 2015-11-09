@@ -1,0 +1,79 @@
+1.git init 把当前目录变成git可以管理的仓库
+
+2.git add read.txt 把read.txt文件提交到仓库
+
+3.git commit -m “这里写注释” 给本次提交的事件添加注释
+
+4.git status 可以让我们时刻掌握仓库当前的状态
+
+5.git diff read.txt 查看当前read.txt文件跟上一版本的read.txt文件的具体不同
+
+6.git reset —hard HEAD^ 返回上一个版本
+
+7.git reset —hard 版本号 返回到具体某一个版本
+
+8.git log 查看具体提交了几个版本(注意：如果从最新版本返回上一个版本，可能消失)
+
+9.git reflog 查看命令历史，可以用来返回到某一个具体版本，当不知道版本号的时候
+
+10.git cat read.txt 查看read.txt的文件内容
+
+11.git checkout — read.txt 当read.txt还没提交到版本库的时候，让工作区的read.txt返回为修改前的状态
+
+12.git reset HEAD read.txt 当read.txt还没被提交到版本库并且已经被提交到暂存区的时候，让暂存区的修改回退到工作区
+
+13.rm read.txt 删除工作区文件
+
+14.git rm read.txt 删除版本区文件
+
+15.ssh-keygen -t rss -C “947401662@q.com” 当主用户目录下面没有.ssh这个文件的时候，输入这个命令用来创建.ssh文件，里面包含id_rsa和is_rsa.pub两个文件，is_rsa.pub用来在github网站上输入公钥
+
+16.git remote add origin git@github.com:gcftotem420/learngit.git 用来让本地的git跟github上的账户建立联系
+
+17.git push -u origin master 把本地的内容推送到远程服务器上(第一次用)
+
+18.git push origin master把本地的内容推送到远程服务器上(当服务器上已经有内容以后)
+
+19.git clone git@github.com:gcftotem420/gitskills.git 把服务器上的gitskills克隆到本地
+
+20.git checkout -b dev 创建dev分支并且切换到dev分支，相当于
+	git branch dev
+	git checkout dev
+
+21.git branch 查看所有分支并确定当前分支在哪里
+
+22.git checkout master 返回主分支
+
+23.git merge dev 把dev分支的工作成果合并到master分支上
+
+24.git branch -d dev 删除dev分支
+
+25.git merge —no-ff -m “merge with no-ff” totem 同样是把分支合并到当前主线，不过当分支被删除时会保留分支记录
+
+26.git log —graph —pretty=oneline —abbrev-commit 以特定格式显示各种历史版本的信息
+
+27.git stash 保存当前工作区
+
+28.git stash list 显示保存的stash的版本
+
+29.git stash apply 切换到保存的stash版本
+
+30.git stash drop 删除stash
+
+31.git stash pop 切换到最近保存的stash版本
+
+32.git stash apply stash@{0} 切换到某一个指定的stash版本
+
+33.git remote 显示远程服务器信息
+
+34.git remote -v 显示详细的远程服务器信息
+
+
+
+
+
+
+
+
+
+
