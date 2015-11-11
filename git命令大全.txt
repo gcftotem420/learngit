@@ -68,6 +68,32 @@
 
 34.git remote -v 显示详细的远程服务器信息
 
+35.git tag v1.0 创建一个新标签
+
+36.git tag 查看所有标签
+
+37.git tag v0.9 62213123 为指定的版本设置标签
+
+38.git show v0.9 显示指定标签的具体内容
+
+39.git tag -a <tagname> -m “具体注释” 可以指定标签信息
+
+40.git tag -s <tagname> -m “具体注释” 可以用PGP签名标签
+
+41.git tag -d v1.0 删除标签
+
+42.git push origin <tagname> 推送标签到远程服务器
+
+43.git push origin —tags 一次性推送尚未推送到远程的本地标签
+
+43.如果要删除远程的标签，需要以下两步
+	git tag -d v1.0
+	git push origin :regs/tags/v1.0
+
+44.git config —global color.ui true 让git显示颜色
+
+45.git config —global alias.last ‘log -1’ 配置自己的命令，这是显示最后一次记录
+
 
 
 
